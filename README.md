@@ -1,16 +1,16 @@
 ## Projeto Tio Phill 
 Sistema de roterização para vans escolares com objetivo de informar de forma segura e em tempo real os pais utilizando os recursos do celular do motorista.
 
-#Hackathon - Uber Hack - 01 a 02/06/2019
+# Hackathon - Uber Hack - 01 a 02/06/2019
 
-#Equipe - 6
+# Equipe - 6
 Melanie Miranda
 JC
 Jessica Rampim
 Renato Tadeu Rodrigues
 Thiele Nunes de Souza
 
-## Setup and run the app Firebase
+## Instruções para o uso do Firebase:
 
 Follow these steps to setup and run the quickstart:
 
@@ -36,11 +36,4 @@ Follow these steps to setup and run the quickstart:
     firebase serve
     ```
  1. As indicated, open [http://localhost:5000](http://localhost:5000) in your browser and try out the app.
- 
-## Support
 
-- [Firebase Support](https://firebase.google.com/support/)
-
-## License
-
-© Google, 2017. Licensed under an [Apache-2](../LICENSE) license.
