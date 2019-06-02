@@ -1,7 +1,7 @@
-## Projeto Tio Phill 
+# Projeto Tio Phill 
 Sistema de roterização para vans escolares com objetivo de informar de forma segura e em tempo real os pais utilizando os recursos do celular do motorista.
 
-# Hackathon - Uber Hack - 01 a 02/06/2019
+## Hackathon - Uber Hack - 01 a 02/06/2019
 
 # Equipe - 6
 Melanie Miranda
