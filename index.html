@@ -17,7 +17,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Learn how to use the Firebase platform on the Web">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FriendlyEats</title>
+  <title>Tio Phill</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -28,13 +28,13 @@
 
   <!-- Add to homescreen for Chrome on Android -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="FriendlyEats">
+  <meta name="application-name" content="Tio Phill">
   <meta name="theme-color" content="#4285F4">
 
   <!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="FriendlyEats">
+  <meta name="apple-mobile-web-app-title" content="Tio Phill">
   <meta name="apple-mobile-web-app-status-bar-style" content="#4285F4">
 
   <!-- Tile icon for Win8 -->
@@ -54,23 +54,34 @@
 </head>
 <body>
 <div>
+  
   <div class="header"></div>
+  
+  <main>
+      
+      
 
-  <main></main>
+  </main>
 
+  
+  
   <div class="dialogs"></div>
-
+  
   <div hidden class="template" id="header-base">
       <header id="site-header" class="mdc-toolbar mdc-toolbar--fixed">
         <div id="title" class="mdc-toolbar__row mdc-layout-grid">
           <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-            <span class="material-icons mdc-toolbar__icon--menu">restaurant</span>
-            <span class="mdc-toolbar__title">FriendlyEats</span>
+            <span class="material-icons mdc-toolbar__icon--menu">directions_car</span>
+            <span class="mdc-toolbar__title">Tio Phill</span>
+            
           </section>
         </div>
         <div id="section-header" data-fir-if="hasSectionHeader"></div>
+       
       </header>
+     
   </div>
+  
 
   <div hidden class="template" id="main-adjusted">
     <div id="message-cards-container" class="mdc-layout-grid mdc-toolbar-fixed-adjust">
@@ -90,7 +101,7 @@
       <div class="text">
         This app is connected to the Firebase project "<b data-fir-content="projectId"></b>".<br />
         <br />
-        Your Cloud Firestore has no documents in <b>/restaurants/</b>.
+        Your Cloud Firestore has no documents in <b>/tios/</b>.
       </div>
       <br />
       <a class="mdc-button" id="add_mock_data">
@@ -103,7 +114,7 @@
       <div id="guy-container" class="mdc-toolbar-fixed-adjust">
         <img class="guy" src="/images/guy_fireats.png" />
         <div class="text">
-          This restaurant has no ratings.<br />
+          This Tio has no ratings.<br />
         </div>
         <br />
         <a class="mdc-button" data-fir-click="add_mock_data">
@@ -204,7 +215,7 @@
 
   <ul hidden class="template mdc-list" id="all-filters-list">
     <li id="show-page-category" class="mdc-list-item" data-mdc-auto-init="MDCRipple">
-      <i class="material-icons">fastfood</i>
+      <i class="material-icons">directions_car</i>
       <span data-fir-if-not="category">Any Category</span>
       <b data-fir-content="category"></b>
     </li>
@@ -242,7 +253,7 @@
       </div>
       <div class="page" id="page-category">
         <header class="mdc-dialog__header">
-          <i class="material-icons">fastfood</i>
+          <i class="material-icons">directions_car</i>
           <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
             Category
           </h2>
@@ -367,13 +378,16 @@
     <!-- div to display messages received by this app. -->
     <div id="messages"></div>
   </div>
-  <div>
-  </div>
-  <div id="map" style="width: 100%; height: 400px"></div>
-  <!-- <div id="map" style="position:absolute; width:49%; height:100%; background:grey" ></div> -->
-  <div id="panel" style="position:absolute; width:49%; left:51%; height:100%; background:inherit" ></div>
 
- 
+  <!-- <div id="map" style="position:absolute; width:49%; height:100%; background:grey" ></div> -->
+  <div  id="map" style="  width: 100%; height: 620px">
+      <div  id="panel" style=" position:absolute; width:49%; left:51%; height:100%; background:inherit" ></div>
+    </div>
+  <a class="mdc-button" style="padding-left: 40%" id="view-map">
+      <span class="material-icons mdc-toolbar__icon--menu">map</span> 
+        MAPA
+  </a>
+
 </div>
 
 <script src="/__/firebase/5.11.1/firebase-app.js"></script>
@@ -395,8 +409,34 @@
 <script type="text/javascript" src="https://js.api.here.com/v3/3.0/mapsjs-mapevents.js"></script>
 
 
-
 <script>
+
+function showHideDiv(divId, show) {
+    const div = document.querySelector('#' + divId);
+    if (show) {
+      div.style = 'display: visible';
+    } else {
+      div.style = 'display: none';
+    }
+  }
+  
+document.querySelector("#view-map")
+  .addEventListener("click", function() {
+    var x = document.getElementById("map");
+    var y = document.getElementById("message-cards-container");
+    if (x.style.display === "none") {
+
+      x.style.display = "block";
+      y.style.display = "none";
+
+
+    } else {
+      x.style.display = "none";
+      y.style.display = "block";
+
+    }
+  });
+ 
 
 /**
  * Calculates and displays a car route from the Brandenburg Gate in the centre of Berlin
@@ -455,7 +495,6 @@ function onError(error) {
   alert('Ooops!');
 }
 
-
 /**
  * Boilerplate map initialization code starts below:
  */
@@ -467,8 +506,8 @@ var mapContainer = document.getElementById('map'),
 //Step 1: initialize communication with the platform
 
 var platform = new H.service.Platform({
-  'app_id': 'u4yjAvxBJStYHC7NP1dK',
-  'app_code': 'R19gbB58usSvVDkk8B4dVA',
+  'app_id': 'xxxxx',
+  'app_code': 'xxxxx',
   useHTTPS: true
 });
 
@@ -515,7 +554,6 @@ function openBubble(position, text){
     bubble.open();
   }
 }
-
 
 /**
  * Creates a H.map.Polyline from the shape of the route and adds it to the map.
@@ -695,11 +733,8 @@ calculateRouteFromAtoB (platform);
 }
 
 //Step 1: initialize communication with the platform
-var platform = new H.service.Platform({
-  'app_id': 'xxx',
-  'app_code': 'xxx',
-  useHTTPS: true
-});
+
+
 var pixelRatio = window.devicePixelRatio || 1;
 var defaultLayers = platform.createDefaultLayers({
   tileSize: pixelRatio === 1 ? 256 : 512,
@@ -830,14 +865,6 @@ addMarkersToMap(map);
     window.localStorage.setItem('sentToServer', sent ? '1' : '0');
   }
 
-  function showHideDiv(divId, show) {
-    const div = document.querySelector('#' + divId);
-    if (show) {
-      div.style = 'display: visible';
-    } else {
-      div.style = 'display: none';
-    }
-  }
 
   function requestPermission() {
     console.log('Requesting permission...');

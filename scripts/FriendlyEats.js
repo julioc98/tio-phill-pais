@@ -160,18 +160,9 @@ FriendlyEats.prototype.data = {
     'Washington'
   ],
   categories: [
-    'Brunch',
-    'Burgers',
-    'Coffee',
-    'Deli',
-    'Dim Sum',
-    'Indian',
-    'Italian',
-    'Mediterranean',
-    'Mexican',
-    'Pizza',
-    'Ramen',
-    'Sushi'
+    'Ônibus',
+    'Vans',
+    'Micro-ônibus',
   ],
   ratings: [
     {
