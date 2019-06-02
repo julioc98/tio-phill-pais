@@ -71,8 +71,9 @@
       <header id="site-header" class="mdc-toolbar mdc-toolbar--fixed">
         <div id="title" class="mdc-toolbar__row mdc-layout-grid">
           <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-            <span class="material-icons mdc-toolbar__icon--menu">directions_car</span>
-            <span class="mdc-toolbar__title">Tio Phill</span>
+              <img class="material-icons mdc-toolbar__icon--menu" src="images/menu-ham.png">
+              <img class="material-icons logo_tio" src="images/logo_tiophill_letras .png">
+            <!-- <span class="material-icons mdc-toolbar__icon--menu">directions_car</span> -->
             
           </section>
         </div>
@@ -162,7 +163,7 @@
                     <span class="light">●</span>
                     <span data-fir-content="city"></span>
                   </div>
-                  <button id="show-add-review" data-fir-click="show_add_review" class="mdc-button fab">
+                  <button id="show-add-review" data-fir-click="show_add_review" class="mdc-button fab color-tio">
                       <i class="material-icons">add</i>
                     </button>
                 </div>
@@ -385,7 +386,7 @@
     </div>
   <a class="mdc-button" style="padding-left: 40%" id="view-map">
       <span class="material-icons mdc-toolbar__icon--menu">map</span> 
-        MAPA
+        ROTAS 
   </a>
 
 </div>
@@ -506,8 +507,8 @@ var mapContainer = document.getElementById('map'),
 //Step 1: initialize communication with the platform
 
 var platform = new H.service.Platform({
-  'app_id': 'xxxxx',
-  'app_code': 'xxxxx',
+  'app_id': 'PqwxFTUwLO93RWXFqHID',
+  'app_code': 'fdPMETj07pziJ-adUP1LgA',
   useHTTPS: true
 });
 

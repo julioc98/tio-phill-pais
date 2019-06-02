@@ -1,29 +1,25 @@
-[debug] [2019-06-02T12:21:09.028Z] ----------------------------------------------------------------------
-[debug] [2019-06-02T12:21:09.031Z] Command:       /Users/juliocesar/.nvm/versions/node/v10.15.0/bin/node /Users/juliocesar/.nvm/versions/node/v10.15.0/bin/firebase serve
-[debug] [2019-06-02T12:21:09.032Z] CLI Version:   6.10.0
-[debug] [2019-06-02T12:21:09.032Z] Platform:      darwin
-[debug] [2019-06-02T12:21:09.032Z] Node Version:  v10.15.0
-[debug] [2019-06-02T12:21:09.033Z] Time:          Sun Jun 02 2019 09:21:09 GMT-0300 (Brasilia Standard Time)
-[debug] [2019-06-02T12:21:09.033Z] ----------------------------------------------------------------------
+[debug] [2019-06-02T13:53:22.337Z] ----------------------------------------------------------------------
+[debug] [2019-06-02T13:53:22.341Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\melan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-06-02T13:53:22.341Z] CLI Version:   6.10.0
+[debug] [2019-06-02T13:53:22.341Z] Platform:      win32
+[debug] [2019-06-02T13:53:22.341Z] Node Version:  v8.12.0
+[debug] [2019-06-02T13:53:22.342Z] Time:          Sun Jun 02 2019 10:53:22 GMT-0300 (Hora oficial do Brasil)
+[debug] [2019-06-02T13:53:22.342Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-06-02T12:21:09.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-02T12:21:09.047Z] > authorizing via signed-in user
-[debug] [2019-06-02T12:21:09.048Z] [iam] checking project tiophill-uber for permissions ["firebase.projects.get"]
-[debug] [2019-06-02T12:21:09.050Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-06-02T12:21:09.051Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-06-02T12:21:09.263Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-02T12:21:09.290Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tiophill-uber:testIamPermissions  
+[debug] [2019-06-02T13:53:22.355Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-02T13:53:22.357Z] > authorizing via signed-in user
+[debug] [2019-06-02T13:53:22.357Z] [iam] checking project tio-phill-hack for permissions ["firebase.projects.get"]
+[debug] [2019-06-02T13:53:22.360Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tio-phill-hack:testIamPermissions  
 
-[debug] [2019-06-02T12:21:10.260Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-02T12:21:10.262Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tiophill-uber  
+[debug] [2019-06-02T13:53:23.465Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-02T13:53:23.472Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/tio-phill-hack  
  
-[debug] [2019-06-02T12:21:11.222Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-02T13:53:24.379Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from '/Users/juliocesar/go/src/github.com/julioc98/firestore'...
+[info] === Serving from 'C:\Users\melan\Desktop\tio-phill-pais'...
 [info] 
-[debug] [2019-06-02T12:21:11.225Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/213007134040/clients/_:getWebAppConfig  
+[debug] [2019-06-02T13:53:24.391Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/471746585817/clients/_:getWebAppConfig  
  
-[debug] [2019-06-02T12:21:11.728Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-02T13:53:25.608Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: ./
-[info] ✔  hosting: Local server: http://localhost:5000
+[info] +  hosting: Local server: http://localhost:5000
