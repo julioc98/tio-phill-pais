@@ -1,13 +1,16 @@
-# Cloud Firestore Quickstart
+## Projeto Tio Phill 
+Sistema de roterização para vans escolares com objetivo de informar de forma segura e em tempo real os pais utilizando os recursos do celular do motorista.
 
-## Introduction
+#Hackathon - Uber Hack - 01 a 02/06/2019
 
-FriendlyEats is a restaurant recommendation app built on Cloud Firestore.
-For more information about Firestore visit [the docs][firestore-docs].
+#Equipe - 6
+Melanie Miranda
+JC
+Jessica Rampim
+Renato Tadeu Rodrigues
+Thiele Nunes de Souza
 
-[firestore-docs]: https://firebase.google.com/docs/firestore/
-
-## Setup and run the app
+## Setup and run the app Firebase
 
 Follow these steps to setup and run the quickstart:
 
